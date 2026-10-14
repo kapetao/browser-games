@@ -21,7 +21,7 @@ Players who want **quiet, focused logic** — not collection grinds or PvP. You 
 ## Data model (sketch)
 
 ```text
-src/data/
+src/data/browser-games/puzzles/   # database submodule
   manifest.yaml
   sudoku/puzzles.csv      # id, difficulty, givens, solution
   chess/puzzles.csv       # id, fen, solution_moves

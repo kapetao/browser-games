@@ -20,7 +20,7 @@ Each game **is** a wasm crate under [`src/games/`](src/games); the React launche
 src/games/          Rust → wasm32 (one crate per game)
 src/frontend/       React + Vite launcher (host)
 src/catalog/        games.yaml + tags.yaml + manifest.yaml
-src/data/           per-game puzzle banks
+src/data/           database submodule (puzzle banks at browser-games/puzzles/<slug>/)
 docs/           GAMES / GOALS / REQUIREMENTS / ADD-A-GAME
 src/assets/         shared assets submodule (kapetim/ui-assets)
 ```

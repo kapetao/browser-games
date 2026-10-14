@@ -16,7 +16,7 @@ Success criteria:
 - One tap to reveal answer with explanation where applicable
 
 Data model (sketch):
-src/data/
+src/data/browser-games/puzzles/   # database submodule
   manifest.yaml
   sudoku/puzzles.csv      # id, difficulty, givens, solution
   chess/puzzles.csv       # id, fen, solution_moves
