@@ -4,7 +4,7 @@ Browser games built with **Rust → WebAssembly** — sudoku · logic grid · cr
 
 ## 🎮 Games
 
-The catalog ([`src/catalog/games.yaml`](src/catalog/games.yaml)) is the source of truth — each game maps to a `/play/<slug>` route:
+The catalog ([`src/data/browser-games/catalog/games.yaml`](src/data/browser-games/catalog/games.yaml)) is the source of truth — each game maps to a `/play/<slug>` route:
 
 | Game | Route |
 | --- | --- |
@@ -19,7 +19,7 @@ Each game **is** a wasm crate under [`src/games/`](src/games); the React launche
 ```text
 src/games/          Rust → wasm32 (one crate per game)
 src/frontend/       React + Vite launcher (host)
-src/catalog/        games.yaml + tags.yaml + manifest.yaml
+src/data/browser-games/catalog/   games.yaml + tags.yaml + manifest.yaml (database submodule)
 src/data/           database submodule (puzzle banks at browser-games/puzzles/<slug>/)
 docs/           GAMES / GOALS / REQUIREMENTS / ADD-A-GAME
 src/assets/         shared assets submodule (kapetim/ui-assets)
